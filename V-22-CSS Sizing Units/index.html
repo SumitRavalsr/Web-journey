@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border : 2px solid black;
+            /* width: 2048px; */
+            width: 100vw;
+            width: 80vw;
+            /* only block level element not inline  */
+            margin: auto; /*for center*/
+            height: 10vh;
+            background-color:wheat;
+        }
+        .container{
+            box-sizing: border-box;
+            border : 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* only block level element not inline */
+            /* first one vertical(top-bottom)and second horizontal(l-r) */
+            margin: 23px auto ;
+            /* height: 80vh; */
+            min-height: 80vh;   
+            font-size: 18px;
+
+            background-color:wheat;
+        }
+        .container > div{
+            border: 2px solid red;
+            font-size: 2em;
+            font-size: 2rem;
+            width: 50%;
+        }
+
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: white;
+            margin: 23px auto;
+            font: 22px;
+            /* width: 100vh;
+            width: 100vmin;
+            width: 100vmax; */
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+
+    <div class="box">
+        Hello World
+    </div>
+    
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corrupti soluta, dolores reprehenderit impedit hic ea delectus facilis quo laboriosam illo, nobis esse mollitia deleniti officiis possimus minima illum quaerat dolor consequatur!
+        
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, corporis architecto! Obcaecati!
+        </div>
+        </div>
+        <p>
+            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut iusto nihil unde tenetur magnam harum debitis voluptatem non eveniet. Praesentium expedita, ipsa molestiae dicta error debitis! Dolores veniam explicabo vitae, inventore accusamus qui iste optio fugiat illum pariatur quisquam, praesentium beatae tempore sequi assumenda, ratione ea quis sint. Perspiciatis libero expedita praesentium hic blanditiis placeat quasi sit repellat tempora quis, laboriosam incidunt, quibusdam vitae est exercitationem voluptatum deserunt! Quo suscipit consequatur rem? Cum cumque vero nesciunt eum dignissimos, sit nam optio omnis porro laboriosam aut sapiente deserunt iure corporis, libero perferendis laudantium maxime beatae est aliquam tempora quos magnam quaerat quidem? Quidem dolorem eum quis odit ex magni fugit! Nisi consectetur sint optio repudiandae nostrum maiores quae, maxime laboriosam laborum in sunt voluptatem incidunt doloremque tempore harum aliquid dolore autem facilis asperiores quam exercitationem ullam nihil quisquam id. Quasi fugiat recusandae nostrum temporibus eligendi? Sed incidunt cupiditate ex eaque. Beatae eos quo impedit sint, doloribus ut commodi quam velit, quis laudantium placeat dolorem praesentium est molestiae obcaecati quae sunt alias veniam rerum laborum, quisquam omnis? Iste esse nostrum vitae numquam temporibus explicabo hic porro vero veniam asperiores ipsum, magni rerum qui, sed eum possimus? Consectetur quidem voluptates reiciendis veritatis, officia ipsum est. Aspernatur hic tenetur nihil. Corrupti nemo illo exercitationem! Optio officia temporibus, illum voluptatibus perspiciatis qui, vitae eum corporis sed odio enim laudantium reprehenderit dignissimos quasi sequi rerum nulla natus perferendis sapiente, tenetur aut quos et. Qui inventore aliquid iusto dignissimos ea voluptatum laudantium voluptate tenetur nihil? Tempore ab ad, rem eius expedita quas fugit quis veritatis culpa quaerat recusandae dolores deleniti et sed harum placeat qui impedit ipsa hic optio eos dignissimos vel! Aut voluptas neque ipsum accusamus minima blanditiis, vero voluptatem repudiandae, nostrum, laudantium harum. Exercitationem optio aut molestias explicabo expedita maxime veniam dolorem rerum architecto doloremque repellendus magni neque in minus, reiciendis sint eveniet. Nobis distinctio eius quam quisquam repellat. Totam, commodi? Quis non explicabo blanditiis sequi dolores! Rem quia repellendus aspernatur assumenda voluptatem delectus, hic dignissimos maiores? Nihil quo necessitatibus deleniti accusantium nam modi tenetur debitis minima sapiente officia amet officiis magnam ab iure numquam laudantium, libero fuga ratione. Delectus repellendus eos, provident temporibus itaque ea maxime nobis fuga quibusdam veniam harum aliquid obcaecati, vel illo! Adipisci obcaecati tenetur, a ducimus atque praesentium officia autem ad unde eum est quis dolores magnam aliquam perferendis sunt ipsa quas corporis. Ea iure magni quas commodi excepturi. Quasi incidunt cumque esse sunt fuga molestiae laboriosam vero, facilis totam consequuntur saepe nisi quae corrupti asperiores eligendi. Vitae, in. Numquam eius neque nihil dolores aperiam reprehenderit! Sapiente quibusdam in provident. Aperiam ratione aut dolores at. Officiis voluptates officia rem aspernatur atque tempora nostrum, quo, vel iusto vitae, quod tempore similique dolores numquam optio voluptatum voluptas temporibus minus qui facere. Odio aperiam expedita veritatis, dolore maxime dolorum nobis iusto quaerat, temporibus maiores reiciendis at consequatur eos commodi perspiciatis provident! Aperiam blanditiis magnam illum, hic recusandae odit quod repudiandae iusto maxime optio veniam laudantium saepe cupiditate esse doloremque facilis officiis nesciunt eum atque necessitatibus ipsam praesentium? At placeat, deserunt aut sequi dolorum repellat eum temporibus. Error assumenda corrupti quam? Quibusdam cumque, ea dolorum natus molestias maxime molestiae nisi repudiandae, vero, cupiditate corporis odit possimus commodi quos sapiente. Consequatur eius a porro, asperiores voluptatem iste vero fugit reiciendis natus. Ullam nam, provident harum deserunt esse perspiciatis, debitis porro culpa dolore quod quibusdam itaque sunt! Nihil cupiditate necessitatibus non autem impedit, aspernatur officia placeat laudantium reiciendis illum delectus maxime rerum numquam molestias eum sint illo explicabo alias? Natus debitis ipsa doloribus assumenda illum voluptatibus dolorem dignissimos dolor distinctio veniam. Nulla eum, quisquam dolorem consequatur ullam fugit. Eligendi odio dolore laudantium blanditiis ea eum minus perferendis cupiditate. Minus aspernatur, temporibus quasi sequi modi blanditiis autem necessitatibus. Culpa amet velit odit libero facilis in dolores dignissimos corporis nihil ut. Consequatur neque provident eos vel velit, voluptatibus nulla non fuga dolore repudiandae consequuntur eius. Repudiandae architecto laudantium ab perferendis autem animi voluptas neque error est maxime asperiores exercitationem, mollitia veritatis. Voluptate iure magni cum eaque suscipit minus similique tenetur numquam dolor repellat, rem ea voluptatem obcaecati impedit consequuntur ipsum incidunt assumenda. Distinctio blanditiis eum eaque exercitationem aperiam. Maxime nemo blanditiis soluta voluptas omnis distinctio veniam earum animi labore fugit, ut ad rem recusandae repudiandae vel voluptates deleniti libero quam nam. Sequi, esse quae ipsum possimus, ratione magni vero quod enim non laborum assumenda? Voluptate at dignissimos reprehenderit perferendis modi deleniti minus, ipsam ab eligendi incidunt natus esse magni, porro suscipit voluptatem enim, eum expedita! Aperiam libero cum molestias odio qui blanditiis dolore in labore, voluptatibus facere repellendus error! Repudiandae cupiditate at autem veniam inventore consectetur maxime amet corrupti consequatur delectus libero debitis dignissimos aut eum omnis ullam temporibus aliquid doloribus consequuntur, quos obcaecati, quae asperiores magnam. Adipisci iste, modi nemo quibusdam dignissimos, aliquid minus similique saepe obcaecati doloremque sunt placeat laboriosam? In eos accusamus odit adipisci quo impedit, et dicta voluptatem culpa accusantium! Cum, provident quaerat, labore accusantium aliquid suscipit saepe, doloremque ab facere aperiam doloribus blanditiis voluptatem. Rem accusantium suscipit, obcaecati dolores natus nemo totam. Porro dolor voluptatibus neque quibusdam cumque cupiditate dignissimos debitis magnam? Modi accusamus commodi in temporibus quidem distinctio iusto! Ullam aut blanditiis recusandae rerum mollitia modi excepturi doloribus reprehenderit voluptates sed. Optio, voluptates explicabo ratione voluptate aliquam suscipit libero culpa. Optio at a iste, totam velit maxime perspiciatis eligendi accusamus. Nostrum vero doloribus, corporis exercitationem earum optio asperiores id tenetur, aperiam unde cum provident similique corrupti natus numquam voluptatem magnam perspiciatis rerum ex quis dicta totam. Dolorum deserunt ducimus dignissimos eaque molestias aspernatur quam asperiores quidem autem ex! Iusto sapiente, quos repudiandae modi vel velit cum corrupti aut commodi quasi error libero dolorum minus aliquid labore molestiae nulla, maxime voluptates facilis expedita illum a, eligendi iste tenetur! Eaque praesentium enim, dolores velit sint, hic delectus molestias repellendus accusamus, necessitatibus illo. Alias rem velit at ipsa voluptates magni consequuntur? Quam, quasi tempora eveniet debitis sit expedita! Ab veniam similique, maxime quia, nesciunt exercitationem hic laudantium dolores beatae, repellendus accusantium aliquid minima facere quae. -->
+        </p>
+             <!-- Expand this to see that this container will adjust its height lorem999 -->
+
+    </div>
+
+    <div class="mycont">
+        I am another container..
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Posotion Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Box{
+            height: 135px;
+            width: 80vw;
+            border: 2px solid black;
+            margin: 3px;
+            padding: 5px;
+            
+        }
+
+           .Box1{
+            background-color: rgb(88, 99, 109);
+            /* position: relative;
+            z-index: 1;*/
+            
+            position: absolute;
+            top: 0px;
+            left: 0px;  
+
+
+            /* position: sticky;
+            top: 0px;
+            height: 11px;;
+            margin: 0;
+            padding: 0; */
+
+
+        }
+
+        .Box2{
+            background-color: red;
+            /* position: relative;
+            top: -48px; left: 100px */
+        }
+
+        .Box3{
+            background-color: rgb(17, 80, 135);
+            /* position: fixed;
+            bottom: 0px;
+            left: 8vw;
+            height: 45px; */
+        }
+
+        .Box4{
+            background-color: rgb(142, 184, 19);
+        }
+        
+
+        .parent{
+            margin: 45px;
+            padding: 54px;
+            border: 2px solid purple;
+            /* position: absolute; */
+            /* position: fixed; */
+
+            /* IMP Exception: transform, filter and perspective are properties
+               which also make an element appear as positioned */
+            
+            /* transform: translate(0); */
+            /* filter: invert(0);
+            perspective: 0em; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="Box Box1"></div>
+    <div class="Box Box2"></div>
+    <div class="Box Box3"></div>
+    <div class="Box Box4"></div>
+    </div>
+    
+</body>
+</html>

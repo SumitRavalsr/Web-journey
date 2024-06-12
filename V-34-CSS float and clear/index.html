@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+    <style>
+        img{
+            /* float:left; 
+             */
+             float: right;
+        }
+
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+
+        }
+        .card{
+            border: 2px solid red;;
+        }
+        .card:nth-child(2){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- .cards>.card*3 -->
+    <div class="cards">
+        <img src="https://vedicfeed.com/wp-content/uploads/2020/02/Sri-Krishna-Painting.jpg" alt="img" width="250px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique modi expedita debitis aspernatur voluptates, repellendus vitae excepturi ipsam velit numquam accusantium consequatur error dignissimos, explicabo atque quos! Iusto accusantium reprehenderit ratione, omnis voluptas voluptatibus minima illum voluptatem nesciunt earum quo dolore ducimus alias iste iure. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vel cupiditate nemo eveniet? Adipisci, vel?</p>
+        </div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+    
+</body>
+</html>

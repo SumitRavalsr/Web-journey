@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style>
+
+        .yellow{
+            color:yellow;
+        }
+        .cred{
+            color: red;
+        }
+        
+        [data-x=a]{
+            /* attribute selector */
+            background-color: red;
+        }
+
+        .cpurple{
+            color: purple;
+            background-color: aliceblue;
+        }
+        .blue{
+            color:red !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+        <h1 class = "yellow cred cpurple" data-x="a">Jay Shree Krishna</h1>
+        <!-- inline style -->
+        <h2 class ="blue" style="color :blue">Hello</h2>
+    </div>
+    
+</body>
+</html>

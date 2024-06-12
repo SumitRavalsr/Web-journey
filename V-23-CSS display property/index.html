@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .Box{
+            border: 2px solid black;
+            display: inline-block;
+            padding: 45px;
+            margin: 35px;
+            width: 30px;
+            /* display: none; */
+        }
+        .Box1{
+            /* display: none; */
+            /* visibility: hidden; */
+            display: flex;
+            display: inline-flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="Box Box1">I am a block element</div>
+    <div class="Box">I am also</div>
+
+    <span>I am spna</span>
+    <span>I am also</span>
+</body>
+</html>

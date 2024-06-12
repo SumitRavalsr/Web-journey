@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2</title>
+    <style>
+        div p{
+            background-color: blue;
+            color: white;
+        }
+
+        div > :first-child{
+            background-color: red;
+            color: yellow;
+        }
+        /* right below */
+        div p :first-child{
+            background-color: red;
+            color: yellow;        
+        }
+
+
+        
+        div p:nth-child(2){
+            background-color: red;
+        }
+        .m{
+            color:aqua;
+            background-color: antiquewhite;
+        }
+        #k{
+            color:black;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptatum laboriosam voluptatem exercitationem at quia tempora impedit magnam expedita qui officiis.</p>
+        <p>I am another para</p>
+        <p>I am another para</p>
+        <p>I am another para</p>
+        <p>I am another para</p>
+    </div>
+
+    <div>
+        <p id="k">Iama para</p>
+        <p class="m">I am also para</p>
+        <p class="m">I am also para</p>
+        <p class="m">I am also para</p>
+    </div>
+    
+</body>
+</html>
